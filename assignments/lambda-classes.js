@@ -1,3 +1,5 @@
+// Classes
+
 class Person {
     constructor(atts) {
         this.name = atts.name;
@@ -23,7 +25,7 @@ class Instructor extends Person {
     }
 
     grade(student, subject) {
-        console.log(`${this.name} receives a perfect score on ${subject}`)
+        console.log(`${student.name} receives a perfect score on ${subject}`)
     }
 }
 
@@ -48,7 +50,7 @@ class Student extends Person {
     }
 }
 
-class ProjectManagers extends Instructor {
+class ProjectManager extends Instructor {
     constructor(attsPM) {
         super(attsPM);
         this.gradClassName = attsPM.gradClassName;
@@ -60,6 +62,66 @@ class ProjectManagers extends Instructor {
     }
 
     debugsCode(student, subject) {
-        console.log(`{name} debugs ${this.name}'s code on ${subject}`)
+        console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
     }
 }
+
+//Objects
+
+const emily = new Instructor({
+    name: 'Emily',
+    age: 45,
+    location: 'San Diego',
+    specialty: 'Front-end',
+    favLanguage: 'JavaScript',
+    catchPhrase: "Ain't nobody got time for that!"
+})
+
+const hope = new Instructor({
+    name: 'Hope',
+    age: 31,
+    location: 'San Diego',
+    specialty: 'Back-end',
+    favLanguage: 'Python',
+    catchPhrase: "You need to get your life together."
+})
+
+const jen = new Student({
+    name: 'Jen',
+    age: 39,
+    location: 'Milwaukee',
+    previusBackground: 'Accounting',
+    className: 'Web21',
+    favSubjects: ['Math', 'English', 'Programming']
+})
+
+const wayne = new Student({
+    name: 'Wayne',
+    age: 20,
+    location: 'Disney Land',
+    previusBackground: 'Sales',
+    className: 'WebPT7',
+    favSubjects: ['Philosophy', 'History', 'Programming']
+})
+
+const jon = new ProjectManager({
+    name: 'Jon',
+    age: 33,
+    location: 'L.A.',
+    specialty: 'Front-end',
+    favLanguage: 'JavaScript',
+    catchPhrase: "I wish I knew.",
+    gradClassName: "Web17",
+    favInstructor: "Dan"
+})
+
+const sarah = new ProjectManager({
+    name: 'Sarah',
+    age: 25,
+    location: 'Miami',
+    specialty: 'Retrieving Links',
+    favLanguage: 'English',
+    catchPhrase: "Don't forget to fill out your daily standup forms!",
+    gradClassName: "Web16",
+    favInstructor: "Josh"
+})
