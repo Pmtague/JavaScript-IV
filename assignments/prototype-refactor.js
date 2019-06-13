@@ -244,7 +244,7 @@ class GameObject {
 //     return `${this.name} healed ${healAmount} HP!`;
 //   }
 
-  // Refactored Villian Constructor with Methods
+  // Refactored Hero Constructor with Methods
 
   class Hero extends Humanoid {
     constructor(atts) {
