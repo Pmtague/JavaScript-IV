@@ -128,6 +128,7 @@ const sarah = new ProjectManager({
 
 // Testing
 
+
 console.log(sarah.speak());
 console.log(hope.demo('arrays'))
 console.log(emily.grade(wayne, 'concatenation'))
