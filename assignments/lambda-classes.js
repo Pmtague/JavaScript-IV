@@ -8,7 +8,7 @@ class Person {
     }
 
     speak() {
-        console.log(`Hello my ${this.name} is Fred, I am from ${this.location}`)
+        console.log(`Hello my name is ${this.name}, I am from ${this.location}`)
     }
 }
 
@@ -125,3 +125,14 @@ const sarah = new ProjectManager({
     gradClassName: "Web16",
     favInstructor: "Josh"
 })
+
+// Testing
+
+console.log(sarah.speak());
+console.log(hope.demo('arrays'))
+console.log(emily.grade(wayne, 'concatenation'))
+console.log(jen.listsSubjects())
+console.log(wayne.PRAssignment('JavaScript II'))
+console.log(jen.sprintChallenge('Advanced CSS'))
+console.log(jon.standUp('Web21'))
+console.log(sarah.debugsCode(wayne, 'classes'))
