@@ -8,7 +8,7 @@ class Person {
     }
 
     speak() {
-        console.log(`Hello my name is ${this.name}, I am from ${this.location}`)
+        return `Hello my name is ${this.name}, I am from ${this.location}.`
     }
 }
 
@@ -21,11 +21,11 @@ class Instructor extends Person {
     }
 
     demo(subject) {
-        console.log(`Today we are learning about ${subject}`)
+        return `Today we are learning about ${subject}.`
     }
 
     grade(student, subject) {
-        console.log(`${student.name} receives a perfect score on ${subject}`)
+        return `${student.name} receives a perfect score on ${subject}.`
     }
 }
 
@@ -38,15 +38,15 @@ class Student extends Person {
     }
 
     listsSubjects() {
-        console.log(this.favSubjects)
+        return this.favSubjects
     }
 
     PRAssignment(subject) {
-        console.log(`${this.name} has submitted a PR for ${subject}`)
+        return `${this.name} has submitted a PR for ${subject}.`
     }
 
     sprintChallenge(subject) {
-        console.log(`${this.name} has begun sprint challenge on ${subject}`)
+        return `${this.name} has begun sprint challenge on ${subject}.`
     }
 }
 
@@ -58,11 +58,11 @@ class ProjectManager extends Instructor {
     }
 
     standUp(slackChannel) {
-        console.log(`${this.name} announces to ${slackChannel}, @channel standy times!`)
+        return `${this.name} announces to ${slackChannel}, @channel standy times!`
     }
 
     debugsCode(student, subject) {
-        console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
+        return `${this.name} debugs ${student.name}'s code on ${subject}`
     }
 }
 
@@ -128,9 +128,10 @@ const sarah = new ProjectManager({
 
 // Testing
 
-
-console.log(sarah.speak());
-console.log(hope.demo('arrays'))
+console.log("Jon's catchphrase: " + jon.catchPhrase)  // 'Jon's catchphrase: I wish I knew.'
+console.log("Emily's specialtiy: " + emily.specialty)  // 'Emily's specialtiy: Front-end'
+console.log(sarah.speak())  // 'Hello my name is Sarah, I am from Miami'
+console.log(hope.demo('arrays')) //
 console.log(emily.grade(wayne, 'concatenation'))
 console.log(jen.listsSubjects())
 console.log(wayne.PRAssignment('JavaScript II'))
