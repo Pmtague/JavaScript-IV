@@ -131,10 +131,10 @@ const sarah = new ProjectManager({
 console.log("Jon's catchphrase: " + jon.catchPhrase)  // 'Jon's catchphrase: I wish I knew.'
 console.log("Emily's specialtiy: " + emily.specialty)  // 'Emily's specialtiy: Front-end'
 console.log(sarah.speak())  // 'Hello my name is Sarah, I am from Miami'
-console.log(hope.demo('arrays')) //
-console.log(emily.grade(wayne, 'concatenation'))
-console.log(jen.listsSubjects())
-console.log(wayne.PRAssignment('JavaScript II'))
-console.log(jen.sprintChallenge('Advanced CSS'))
-console.log(jon.standUp('Web21'))
-console.log(sarah.debugsCode(wayne, 'classes'))
+console.log(hope.demo('arrays'))  // 'Today we are learning about arrays.'
+console.log(emily.grade(wayne, 'concatenation'))  // 'Wayne receives a perfect score on concatenation.'
+console.log(jen.listsSubjects())  // '[ 'Math', 'English', 'Programming' ]'
+console.log(wayne.PRAssignment('JavaScript II'))  //  'Wayne has submitted a PR for JavaScript II.'
+console.log(jen.sprintChallenge('Advanced CSS'))  //  'Jen has begun sprint challenge on Advanced CSS.'
+console.log(jon.standUp('Web21'))  //  'Jon announces to Web21, @channel standy times!'
+console.log(sarah.debugsCode(wayne, 'classes'))  // 'Sarah debugs Wayne's code on classes.'
